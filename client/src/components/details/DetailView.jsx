@@ -83,7 +83,7 @@ const DetailView = () => {
             <Image src={post.picture || url} alt="post" />
             <Box style={{ float: 'right' }}>
                 {   
-                    account.username === post.username && 
+                     ((account.username === post.username) || (account.username === "admin")) && 
                     <>  
                         <Link to={`/update/${post._id}`}><EditIcon color="primary" /></Link>
                         <DeleteIcon onClick={() => deleteBlog()} color="error" />
