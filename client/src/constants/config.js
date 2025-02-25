@@ -14,7 +14,7 @@ export const API_NOTIFICATION_MESSAGES = {
     },
     responseFailure: {
         title: "Error!",
-        message: "An error occur while fetching response from server. Please try again"
+        message: "An  error occur while fetching response from server. Please try again"
     },
     networkError: {
         title: "Error!",
