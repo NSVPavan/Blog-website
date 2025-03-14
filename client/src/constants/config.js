@@ -6,7 +6,7 @@ export const API_NOTIFICATION_MESSAGES = {
     },
     success: {
         title: "Success",
-        message: "Data successfully loaded"
+        message: "Data  successfully loaded"
     },
     requestFailure: {
         title: "Error!",
