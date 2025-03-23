@@ -7,7 +7,7 @@ export const newComment = async (request, response) => {
         const comment = await new Comment(request.body);
         comment.save();
 
-        response.status(200).json(' Comment saved successfully');
+        response.status(200).json('Comment saved successfully');
     } catch (error) {
         response.status(500).json(error);
     }
