@@ -6,7 +6,7 @@ const CommentSchema = mongoose.Schema({
         required: true,
     },
     postId: {
-        type: String ,
+        type: String,
         required: true
     },
     date: {
