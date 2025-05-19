@@ -33,7 +33,7 @@ const About = () => {
                     With a seamless and user-friendly interface, you can:
                     </div>
                     <br />
-                    Create and publish blogs in different categories.
+                     Create and publish blogs in different categories.
                     <br />
                     Engage with the community through comments.
                     <br />
