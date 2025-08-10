@@ -14,6 +14,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors());
+app.set("trust proxy", true);
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 
