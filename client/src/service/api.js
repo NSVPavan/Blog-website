@@ -9,8 +9,9 @@ import {
 } from "../utils/common-utils";
 
 const API_URL =
-  process.env.REACT_APP_API_URL ||
-  `${window.location.protocol}//${window.location.host}`;
+  process.env.NODE_ENV === "production"
+    ? "https://your-backend-service.onrender.com"
+    : "http://localhost:8000";
 
 const axiosInstance = axios.create({
   baseURL: API_URL,
