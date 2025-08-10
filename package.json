@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "start": "node server/index.js",
+    "postinstall": "cd server && npm install",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
