@@ -10,7 +10,7 @@ import {
 
 const API_URL =
   process.env.NODE_ENV === "production"
-    ? "https://your-backend-service.onrender.com"
+    ? "https://blog-website-uul8.onrender.com"
     : "http://localhost:8000";
 
 const axiosInstance = axios.create({
