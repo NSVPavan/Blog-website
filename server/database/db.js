@@ -5,7 +5,7 @@ const Connection = async (username, password) => {
   // 2. Otherwise build from username/password (for local dev)
   const URL = process.env.MONGO_URI
     ? process.env.MONGO_URI
-    : `mongodb+srv://${username}:${password}@blog-app.ciyui.mongodb.net/?retryWrites=true&w=majority`;
+    : "mongodb://localhost:27017/blog-website";
 
   try {
     await mongoose.connect(URL, {

@@ -12,20 +12,27 @@ import Router from "./routes/route.js";
 dotenv.config();
 
 const app = express();
+const allowedOrigins = [
+  "https://blog-website-uul8.onrender.com",
+  "http://localhost:3000",
+];
+
 app.use(
   cors({
-    origin: "https://blog-website-uul8.onrender.com", // your frontend's Render URL
+    origin: allowedOrigins,
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
+
 app.options(
   "*",
   cors({
-    origin: "https://blog-website-uul8.onrender.com",
+    origin: allowedOrigins,
     credentials: true,
   })
 );
+
 app.set("trust proxy", true);
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
